@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page - DCS3003</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+<h2>Student Portal Login</h2>
+<form id="loginForm">
+<div class="form-group">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter username" oninput="clearMessage()">
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter password" oninput="clearMessage()">
+</div>
+<span id="messageBox" class="message"></span>
+<button type="button" class="btn-login" onclick="validateLogin()">Login</button>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
